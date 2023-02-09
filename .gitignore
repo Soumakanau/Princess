@@ -61,3 +61,7 @@ crashlytics-build.properties
 ProjectSettings/
 Packages/manifest.json
 Packages/packages-lock.json
+Packages/com.vdc.nature-renderer.vsp.json
+Packages/com.vdc.nature-shaders.embedded.json
+Assets/AssetStoreTools.meta
+Assets/AssetStoreTools/
