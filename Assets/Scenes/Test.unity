@@ -300,46 +300,31 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1082227599110909653, guid: 0da8f998511efb94995bb2f261578e30, type: 3}
   m_PrefabInstance: {fileID: 1082227598468036295}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1013906395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1013906390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bad5dcaeef6bbef4399fc9b08b4748ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _target: {fileID: 1995239810}
---- !u!195 &1013906396
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1013906390}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 10
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 1
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!4 &1013906400 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1082227599110909649, guid: 0da8f998511efb94995bb2f261578e30, type: 3}
   m_PrefabInstance: {fileID: 1082227598468036295}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1013906403
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013906390}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 2eda6aaebb6b27c4381e8d1a702fd917, type: 3}
+  m_Controller: {fileID: 9100000, guid: 4fe03c8a334cf814f8e270c222b89876, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1276228377
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,11 +550,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 113171911314232985, guid: 204fa446bf7dda64693a3e9b8919a881, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.381172
+      value: 5.16
       objectReference: {fileID: 0}
     - target: {fileID: 113171911314232985, guid: 204fa446bf7dda64693a3e9b8919a881, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.914078
+      value: 3.54
       objectReference: {fileID: 0}
     - target: {fileID: 113171911314232985, guid: 204fa446bf7dda64693a3e9b8919a881, type: 3}
       propertyPath: m_LocalRotation.w
@@ -648,6 +633,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1013906395, guid: 0da8f998511efb94995bb2f261578e30, type: 3}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 1995239810}
+    - target: {fileID: 1013906396, guid: 0da8f998511efb94995bb2f261578e30, type: 3}
+      propertyPath: m_Speed
+      value: 3.368332
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013906396, guid: 0da8f998511efb94995bb2f261578e30, type: 3}
+      propertyPath: m_Acceleration
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013906396, guid: 0da8f998511efb94995bb2f261578e30, type: 3}
+      propertyPath: m_AngularSpeed
+      value: 6000
+      objectReference: {fileID: 0}
     - target: {fileID: 1082227599110909649, guid: 0da8f998511efb94995bb2f261578e30, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -658,7 +659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1082227599110909649, guid: 0da8f998511efb94995bb2f261578e30, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1082227599110909649, guid: 0da8f998511efb94995bb2f261578e30, type: 3}
       propertyPath: m_LocalPosition.z
@@ -695,6 +696,10 @@ PrefabInstance:
     - target: {fileID: 1082227599110909653, guid: 0da8f998511efb94995bb2f261578e30, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966766883238339047, guid: 0da8f998511efb94995bb2f261578e30, type: 3}
+      propertyPath: m_Avatar
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0da8f998511efb94995bb2f261578e30, type: 3}
