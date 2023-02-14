@@ -65,3 +65,34 @@ Packages/com.vdc.nature-renderer.vsp.json
 Packages/com.vdc.nature-shaders.embedded.json
 Assets/AssetStoreTools.meta
 Assets/AssetStoreTools/
+Assets/Ch46
+Assets/Ch46_nonPBR.fbx
+Assets/Ch46_nonPBR.fbx.meta
+Assets/Ch46_nonPBR@Dwarf Walk.fbx
+Assets/Ch46_nonPBR@Dwarf Walk.fbx.meta
+Assets/Ch46_nonPBR@Idle.fbx
+Assets/Ch46_nonPBR@Idle.fbx.meta
+Assets/Ch46_nonPBR@Running.fbx
+Assets/Ch46_nonPBR@Running.fbx.meta
+Assets/Characters.meta
+Assets/Texture.meta
+Assets/Characters/Player.controller
+Assets/Characters/Player.controller.meta
+Assets/Prefabs/Ch46_nonPBR.prefab
+Assets/Prefabs/Ch46_nonPBR.prefab.meta
+Assets/Prefabs/Enemy.prefab
+Assets/Prefabs/Enemy.prefab.meta
+Assets/Scenes/Game1.unity
+Assets/Scenes/Game1.unity.meta
+Assets/Scripts/PlayerController.cs
+Assets/Scripts/PlayerController.cs.meta
+Assets/Texture/Ch46_1001_Diffuse.png
+Assets/Texture/Ch46_1001_Diffuse.png.meta
+Assets/Texture/Ch46_1001_Glossiness.png
+Assets/Texture/Ch46_1001_Glossiness.png.meta
+Assets/Texture/Ch46_1001_Normal.png
+Assets/Texture/Ch46_1001_Normal.png.meta
+Assets/Texture/Ch46_1001_Specular.png
+Assets/Texture/Ch46_1001_Specular.png.meta
+Assets/Texture/Ch46_body.mat
+Assets/Texture/Ch46_body.mat.meta
