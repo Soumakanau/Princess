@@ -13,6 +13,9 @@ GameObject:
   - component: {fileID: 1013906395}
   - component: {fileID: 1013906396}
   - component: {fileID: 5284869118143718967}
+  - component: {fileID: 1013906403}
+  - component: {fileID: 1013906408}
+  - component: {fileID: 1013906413}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -101,10 +104,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.25
-  m_Speed: 10
-  m_Acceleration: 8
+  m_Speed: 3.368332
+  m_Acceleration: 100
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 6000
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -125,6 +128,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbabbd0faf0641c4e904c39b270d17b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1013906403
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082227599110909653}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 2eda6aaebb6b27c4381e8d1a702fd917, type: 3}
+  m_Controller: {fileID: 9100000, guid: 4fe03c8a334cf814f8e270c222b89876, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1013906408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082227599110909653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cca610956a86e54794c5b7cbf427436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _weaponRange: 2
+--- !u!114 &1013906413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082227599110909653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5534e3e993ecb0488f2ac01f7a5e168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1082227598633600839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -132,6 +180,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1082227599110909649}
     m_Modifications:
+    - target: {fileID: 2749670252076754592, guid: e277aff39f4709148a641daeb625735f, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8126998768072768730, guid: e277aff39f4709148a641daeb625735f, type: 3}
       propertyPath: m_RootOrder
       value: 0

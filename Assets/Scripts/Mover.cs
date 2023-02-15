@@ -1,3 +1,4 @@
+using RPG.Core;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,32 +9,51 @@ namespace RPG.Movement
     /// <summary>
     /// ƒLƒƒƒ‰ƒNƒ^[‚ÌˆÚ“®‚ğì‚éƒNƒ‰ƒX
     /// </summary>
-    public class Mover : MonoBehaviour
+    public class Mover : MonoBehaviour,IActin
     {
         [SerializeField, Header("Œü‚©‚¤êŠ")] Transform _target;
+
+        NavMeshAgent _navMeshAgent;
+
+        private void Start()
+        {
+            _navMeshAgent = GetComponent<NavMeshAgent>();
+        }
 
         void Update()
         {
             UpdateAnimator();
         }
 
+        public void StartMoveAction(Vector3 destination)
+        {
+            GetComponent<ActionScheduler>().StartAction(this);
+            MoveTo(destination);
+        }
+
         /// <summary>
         /// MouseClick‚ÅPlayer‚ª‚»‚ÌêŠ‚ÉˆÚ“®‚·‚é
         /// </summary>
-        private void MoveToCursor()
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit raycastHit;
-            bool hasHit = Physics.Raycast(ray, out raycastHit);//Œõü‚ª‚Ç‚±‚É“–‚½‚Á‚½‚©‚Æ‚¢‚¤î•ñ‚ğraycastHit•Ï”‚ÉŠi”[
-            if (hasHit)
-            {
-                MoveTo(raycastHit.point);
-            }
-        }
+        //private void MoveToCursor()
+        //{
+        //    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        //    RaycastHit raycastHit;
+        //    bool hasHit = Physics.Raycast(ray, out raycastHit);//Œõü‚ª‚Ç‚±‚É“–‚½‚Á‚½‚©‚Æ‚¢‚¤î•ñ‚ğraycastHit•Ï”‚ÉŠi”[
+        //    if (hasHit)
+        //    {
+        //        MoveTo(raycastHit.point);
+        //    }
+        //}
 
         public void MoveTo(Vector3 destination)
         {
-            GetComponent<NavMeshAgent>().destination = destination;
+            _navMeshAgent.destination = destination;
+            _navMeshAgent.isStopped = false;
+        }
+
+        public void Cancel()
+        {
+            _navMeshAgent.isStopped = true; 
         }
 
         private void UpdateAnimator()
